@@ -1,3 +1,6 @@
+GAPPS_VARIANT := nano
+$(call inherit-product, vendor/google/build/opengapps-packages.mk)
+
 #
 # Copyright (C) 2016 The Android Open-Source Project
 #
