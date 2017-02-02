@@ -6,12 +6,12 @@ TARGET_SCREEN_WIDTH := 1440
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/google/marlin/aosp_marlin.mk)
+$(call inherit-product, device/google/marlin/aosp_sailfish.mk)
 
--include device/google/marlin/marlin/device-lineage.mk
+-include device/google/marlin/sailfish/device-lineage.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_marlin
+PRODUCT_NAME := lineage_sailfish
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel XL
 TARGET_MANUFACTURER := HTC
@@ -22,4 +22,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="google/marlin/marlin:7.1.1/NMF26V/3562348:user/release-keys" \
     PRIVATE_BUILD_DESC="marlin-user 7.1.1 NMF26V 3562348 release-keys"
 
-$(call inherit-product-if-exists, vendor/google/marlin/device-vendor-marlin.mk)
+$(call inherit-product-if-exists, vendor/google/sailfish/device-vendor-sailfish.mk)
