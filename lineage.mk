@@ -22,4 +22,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="google/marlin/marlin:7.1.1/NMF26V/3562348:user/release-keys" \
     PRIVATE_BUILD_DESC="marlin-user 7.1.1 NMF26V 3562348 release-keys"
 
-$(call inherit-product-if-exists, vendor/google/marlin/device-vendor-marlin.mk)
+$(call inherit-product-if-exists, vendor/google/marlin/marlin-vendor.mk)
