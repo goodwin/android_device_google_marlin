@@ -16,4 +16,7 @@ TARGET_KERNEL_SOURCE := kernel/google/marlin
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 
+# Snapdragon LLVM
+TARGET_USE_SDCLANG := true
+
 -include vendor/google/marlin/BoardConfigVendor.mk
